@@ -1,0 +1,223 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ��Vision V5.34.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: С��,  , LIC=SDA0P-MY5PS-LQY0Q-N9Z8R-8ZHPV-44W13
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.34.0.0
+Toolchain Path:  F:\STM32\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.34.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+D:\mavlink\KEIL\zhouzhou\MDK-ARM\zhouzhou.uvprojx
+Project File Date:  09/21/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'F:\STM32\ARM\ARMCC\Bin'
+Rebuild target 'zhouzhou'
+Note: source file '..\Drivers\LED\LED.c' - object file renamed from 'zhouzhou\LED.o' to 'zhouzhou\led_1.o'.
+Note: source file '..\RTT\SEGGER_RTT_printf.c' - object file renamed from 'zhouzhou\SEGGER_RTT_printf.o' to 'zhouzhou\segger_rtt_printf_1.o'.
+Note: source file '..\RTT\SEGGER_RTT.c' - object file renamed from 'zhouzhou\SEGGER_RTT.o' to 'zhouzhou\segger_rtt_1.o'.
+Note: source file '..\Drivers\LED\LED.c' - object file renamed from 'zhouzhou\LED.o' to 'zhouzhou\led_1.o'.
+assembling startup_stm32f103xb.s...
+compiling mavlink.c...
+../Core/Inc/COM.h(16): error:  #20: identifier "SemaphoreHandle_t" is undefined
+    SemaphoreHandle_t TX_IDLE_semHandle; // 发送空闲标�?
+../Core/Inc/COM.h(17): error:  #20: identifier "QueueHandle_t" is undefined
+    QueueHandle_t TX_QueueHandle;        // 发送队�?
+../Core/Inc/COM.h(21): error:  #20: identifier "QueueHandle_t" is undefined
+    QueueHandle_t RX_QueueHandle;        // 接收队列
+../Core/Inc/COM.h(27): error:  #20: identifier "bool" is undefined
+  bool Init_COM_with_DMA_idle(COM_WITH_DMA_IDLE_t *p_COM, char *COM_name, UART_HandleTypeDef *huart, DMA_HandleTypeDef *hdma_usart_rx, void (*decode_rx_byte)(uint8_t byte));
+../Core/Inc/COM.h(28): error:  #20: identifier "bool" is undefined
+  bool COM_send_data(COM_WITH_DMA_IDLE_t *p_COM, uint8_t* data, uint16_t data_length);
+..\mavlink\ardupilotmega/../mavlink_types.h(46): error:  #20: identifier "pack" is undefined
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(46): error:  #18: expected a ")"
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(46): error:  #79: expected a type specifier
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(46): error:  #260-D: explicit type is missing ("int" assumed)
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(46): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(46): error:  #130: expected a "{"
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(46): warning:  #64-D: declaration does not declare anything
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(46): warning:  #177-D: variable "type"  was declared but never referenced
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(46): error:  #20: identifier "pack" is undefined
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(46): error:  #260-D: explicit type is missing ("int" assumed)
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(46): error:  #247: function "__pragma"  has already been defined
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(59): error:  #130: expected a "{"
+  }) mavlink_param_union_t;
+..\mavlink\ardupilotmega/../mavlink_types.h(75): warning:  #12-D: parsing restarts here after previous syntax error
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(75): error:  #3092: anonymous unions are only supported in --gnu mode, or when enabled with #pragma anon_unions
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(75): error:  #3093: anonymous structs are only supported in --gnu mode, or when enabled with #pragma anon_unions
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(75): warning:  #64-D: declaration does not declare anything
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(75): error:  #20: identifier "pack" is undefined
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(75): error:  #260-D: explicit type is missing ("int" assumed)
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(75): error:  #247: function "__pragma"  has already been defined
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(95): error:  #130: expected a "{"
+  }) mavlink_param_union_double_t;
+..\mavlink\ardupilotmega/../mavlink_types.h(101): warning:  #12-D: parsing restarts here after previous syntax error
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(101): warning:  #177-D: variable "sysid"  was declared but never referenced
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(101): warning:  #177-D: variable "compid"  was declared but never referenced
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(101): error:  #20: identifier "pack" is undefined
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(101): error:  #260-D: explicit type is missing ("int" assumed)
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(101): error:  #247: function "__pragma"  has already been defined
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(105): error:  #130: expected a "{"
+  }) mavlink_system_t;
+..\mavlink\ardupilotmega/../mavlink_types.h(107): error:  #65: expected a ";"
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(107): warning:  #177-D: variable "checksum"  was declared but never referenced
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(107): warning:  #177-D: variable "magic"  was declared but never referenced
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(107): warning:  #177-D: variable "len"  was declared but never referenced
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(107): warning:  #177-D: variable "incompat_flags"  was declared but never referenced
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(107): warning:  #177-D: variable "compat_flags"  was declared but never referenced
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(107): warning:  #177-D: variable "seq"  was declared but never referenced
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(107): warning:  #177-D: variable "sysid"  was declared but never referenced
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(107): warning:  #177-D: variable "compid"  was declared but never referenced
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(107): warning:  #177-D: variable "msgid"  was declared but never referenced
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(107): warning:  #177-D: variable "payload64"  was declared but never referenced
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(107): warning:  #177-D: variable "ck"  was declared but never referenced
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(107): warning:  #177-D: variable "signature"  was declared but never referenced
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(107): error:  #20: identifier "pack" is undefined
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(107): error:  #260-D: explicit type is missing ("int" assumed)
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(107): error:  #247: function "__pragma"  has already been defined
+  MAVPACKED(
+..\mavlink\ardupilotmega/../mavlink_types.h(121): error:  #130: expected a "{"
+  }) mavlink_message_t;
+mavlink.c: 19 warnings, 30 errors
+compiling stm32f1xx_hal_msp.c...
+compiling stm32f1xx_it.c...
+compiling LED.c...
+compiling COM.c...
+../Core/Inc/COM.h(16): error:  #20: identifier "SemaphoreHandle_t" is undefined
+    SemaphoreHandle_t TX_IDLE_semHandle; // 发送空闲标�?
+../Core/Inc/COM.h(17): error:  #20: identifier "QueueHandle_t" is undefined
+    QueueHandle_t TX_QueueHandle;        // 发送队�?
+../Core/Inc/COM.h(21): error:  #20: identifier "QueueHandle_t" is undefined
+    QueueHandle_t RX_QueueHandle;        // 接收队列
+../Core/Inc/COM.h(27): error:  #20: identifier "bool" is undefined
+  bool Init_COM_with_DMA_idle(COM_WITH_DMA_IDLE_t *p_COM, char *COM_name, UART_HandleTypeDef *huart, DMA_HandleTypeDef *hdma_usart_rx, void (*decode_rx_byte)(uint8_t byte));
+../Core/Inc/COM.h(28): error:  #20: identifier "bool" is undefined
+  bool COM_send_data(COM_WITH_DMA_IDLE_t *p_COM, uint8_t* data, uint16_t data_length);
+..\Core\Src\COM.c(2): error:  #5: cannot open source input file "SEGGER_RTT.h": No such file or directory
+  #include "SEGGER_RTT.h"
+..\Core\Src\COM.c: 0 warnings, 6 errors
+compiling stm32f1xx_hal_cortex.c...
+compiling stm32f1xx_hal_gpio.c...
+compiling stm32f1xx_hal_rcc_ex.c...
+compiling stm32f1xx_hal_gpio_ex.c...
+compiling freertos.c...
+..\Core\Inc\COM.h(16): error:  #20: identifier "SemaphoreHandle_t" is undefined
+    SemaphoreHandle_t TX_IDLE_semHandle; // 发送空闲标�?
+..\Core\Inc\COM.h(17): error:  #20: identifier "QueueHandle_t" is undefined
+    QueueHandle_t TX_QueueHandle;        // 发送队�?
+..\Core\Inc\COM.h(21): error:  #20: identifier "QueueHandle_t" is undefined
+    QueueHandle_t RX_QueueHandle;        // 接收队列
+..\Core\Inc\COM.h(27): error:  #20: identifier "bool" is undefined
+  bool Init_COM_with_DMA_idle(COM_WITH_DMA_IDLE_t *p_COM, char *COM_name, UART_HandleTypeDef *huart, DMA_HandleTypeDef *hdma_usart_rx, void (*decode_rx_byte)(uint8_t byte));
+..\Core\Inc\COM.h(28): error:  #20: identifier "bool" is undefined
+  bool COM_send_data(COM_WITH_DMA_IDLE_t *p_COM, uint8_t* data, uint16_t data_length);
+../Core/Src/freertos.c(100): warning:  #1-D: last line of file ends without a newline
+    }
+../Core/Src/freertos.c: 1 warning, 5 errors
+compiling stm32f1xx_hal.c...
+compiling stm32f1xx_hal_dma.c...
+compiling stm32f1xx_hal_pwr.c...
+compiling main.c...
+compiling croutine.c...
+compiling event_groups.c...
+compiling stm32f1xx_hal_rcc.c...
+compiling list.c...
+compiling timers.c...
+compiling stream_buffer.c...
+compiling queue.c...
+compiling heap_4.c...
+compiling tasks.c...
+compiling port.c...
+compiling SEGGER_RTT_printf.c...
+compiling cmsis_os.c...
+compiling SEGGER_RTT.c...
+compiling stm32f1xx_hal_tim_ex.c...
+compiling stm32f1xx_hal_tim.c...
+compiling system_stm32f1xx.c...
+compiling stm32f1xx_hal_flash_ex.c...
+compiling stm32f1xx_hal_exti.c...
+compiling stm32f1xx_hal_flash.c...
+compiling stm32f1xx_hal_uart.c...
+compiling LED.c...
+"zhouzhou\zhouzhou.axf" - 41 Error(s), 20 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.0.pack
+                Keil.STM32F1xx_DFP.2.4.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_zhouzhou
+  F:\STM32\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  F:\STM32\Keil\STM32F1xx_DFP\2.4.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Target not created.
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>

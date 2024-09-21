@@ -1,0 +1,12 @@
+zhouzhou\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/list.c
+zhouzhou\list.o: F:\STM32\ARM\ARMCC\Bin\..\include\stdlib.h
+zhouzhou\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h
+zhouzhou\list.o: F:\STM32\ARM\ARMCC\Bin\..\include\stddef.h
+zhouzhou\list.o: F:\STM32\ARM\ARMCC\Bin\..\include\stdint.h
+zhouzhou\list.o: ../Core/Inc/FreeRTOSConfig.h
+zhouzhou\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h
+zhouzhou\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h
+zhouzhou\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h
+zhouzhou\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3/portmacro.h
+zhouzhou\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h
+zhouzhou\list.o: ../Middlewares/Third_Party/FreeRTOS/Source/include/list.h
